@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eli Freydlin — Credit Underwriting & Lending Operations</title>
+<style>
+  :root {
+    --navy: #16324f;
+    --navy2: #1f4e79;
+    --accent: #2e6da4;
+    --text: #222;
+    --muted: #555;
+    --line: #d8dee6;
+    --bg: #f4f6f9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg); color: var(--text);
+    line-height: 1.55; font-size: 15px;
+  }
+  .page {
+    max-width: 860px; margin: 28px auto; background: #fff;
+    box-shadow: 0 3px 18px rgba(20,50,79,.12); border-radius: 8px; overflow: hidden;
+  }
+  header {
+    background: linear-gradient(135deg, var(--navy), var(--navy2));
+    color: #fff; padding: 34px 48px 26px;
+  }
+  header h1 { font-size: 34px; letter-spacing: 1.5px; font-weight: 700; }
+  header .tagline { font-size: 16px; color: #cfe0f0; margin-top: 4px; font-weight: 600; letter-spacing: .3px; }
+  .contact { margin-top: 14px; font-size: 13.5px; color: #e8f0f8; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+  .contact a { color: #fff; text-decoration: none; border-bottom: 1px dotted rgba(255,255,255,.5); }
+  .contact a:hover { border-bottom-style: solid; }
+  main { padding: 28px 48px 40px; }
+  section { margin-bottom: 24px; }
+  h2 {
+    font-size: 14px; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--navy); border-bottom: 2px solid var(--line);
+    padding-bottom: 5px; margin-bottom: 12px;
+  }
+  .summary { font-size: 15px; color: #333; }
+  .highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 28px; list-style: none; }
+  .highlights li { padding-left: 18px; position: relative; margin-bottom: 5px; }
+  .highlights li::before { content: "▸"; color: var(--accent); position: absolute; left: 0; }
+  .skills { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .skills h3 { font-size: 13px; color: var(--navy2); margin-bottom: 4px; }
+  .skills p { font-size: 13.5px; color: var(--muted); }
+  .job { margin-bottom: 16px; page-break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+  .job-head .title { font-size: 15.5px; font-weight: 700; color: var(--navy); }
+  .job-head .dates { font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .job .org { font-size: 14px; color: var(--accent); font-weight: 600; margin-bottom: 5px; }
+  .job ul { margin: 4px 0 0 18px; }
+  .job li { margin-bottom: 3.5px; font-size: 14px; }
+  .edu li { margin-bottom: 4px; font-size: 14px; margin-left: 18px; }
+  .actions { max-width: 860px; margin: 0 auto 30px; text-align: center; }
+  button {
+    font-size: 14px; font-weight: 600; padding: 10px 22px; margin: 0 6px;
+    border-radius: 8px; border: none; cursor: pointer;
+    background: var(--navy); color: #fff;
+  }
+  button.secondary { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); }
+  footer { text-align: center; font-size: 12px; color: #999; padding: 0 20px 26px; }
+  @media (max-width: 640px) {
+    header, main { padding-left: 22px; padding-right: 22px; }
+    .highlights, .skills { grid-template-columns: 1fr; }
+    header h1 { font-size: 27px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 12.5px; }
+    .page { box-shadow: none; margin: 0; max-width: none; border-radius: 0; }
+    .actions { display: none; }
+    section { margin-bottom: 14px; }
+    header { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .job, section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>ELI FREYDLIN</h1>
+    <div class="tagline">Credit Underwriting &nbsp;·&nbsp; Lending Operations &nbsp;·&nbsp; Business Growth</div>
+    <div class="contact">
+      <span>📍 Sunny Isles Beach, FL</span>
+      <span>📞 <a href="tel:+16462179435">+1 (646) 217-9435</a></span>
+      <span>✉️ <a href="/cdn-cgi/l/email-protection#7d1b0f1804191114133d141e11120819531e1210"><span class="__cf_email__" data-cfemail="1b7d697e627f7772755b727877746e7f35787476">[email&#160;protected]</span></a></span>
+      <span>🔗 <a href="https://linkedin.com/in/elifreydlin">linkedin.com/in/elifreydlin</a></span>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">Finance and operations leader with 20 years across lending, auto finance, and business ownership — from running my own dealership to underwriting on the funding side. Played a very significant role in reducing the default rate from 21% to 12% in 2026 through stronger underwriting and qualification, while monthly funded volume grew from $400K to $1M+ and the investor base grew from company capital only to 17 investors. Google Data Analytics certified, skilled in Excel and SQL, and use AI tools daily to work faster — with every final decision human-made.</p>
+    </section>
+
+    <section>
+      <h2>Career Highlights</h2>
+      <ul class="highlights">
+        <li>Reduced the default rate from <strong>21% to 12%</strong> (2026) through stronger underwriting and qualification</li>
+        <li>Monthly funded volume grew from <strong>$400K to $1M+</strong>; deal sizes $5K–$300K</li>
+        <li>Investor base grew from company money only to <strong>17 investors</strong></li>
+        <li>Review <strong>50+ applications per business day</strong> (~1,000+ per month)</li>
+        <li>Built the company's <strong>14-section underwriting framework</strong>: true revenue, cash flow, liquidity, existing debt, payment capacity, red flags, final decision</li>
+        <li>Grew a broker shop <strong>6x</strong> — from 10 applications/week to 12/day, averaging 5 offers and 1 closed deal per day, leading a team of 5–10</li>
+        <li>Grew dealership sales from <strong>45 to 80 units/month</strong> as Finance Manager, underwriting every deal</li>
+        <li>Store averaged <strong>220 units/month vs. a 172 national average</strong> at Island Toyota</li>
+        <li>Owned and ran an auto dealership for <strong>10 years</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div><h3>Credit &amp; Risk</h3><p>Credit risk assessment, bank statement and cash flow analysis, payment capacity, debt and stacking review, fraud detection, deal structuring</p></div>
+        <div><h3>Leadership &amp; Growth</h3><p>Team leadership (5–10), process design, partner and broker relationships, sales, negotiation, P&amp;L management</p></div>
+        <div><h3>Data &amp; Technology</h3><p>Excel (formulas, pivot tables, lookups), SQL, Google Sheets, Tableau, AI-assisted analysis, Node.js automation with Gmail integration</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Operations Manager / Credit Underwriter</span><span class="dates">Jan 2026 – Present</span></div>
+        <div class="org">SH In Advance LLC (MCA funder) — South Florida</div>
+        <ul>
+          <li>Review 50+ funding applications per business day (~1,000+ per month); deal sizes $5K to $300K</li>
+          <li>Played a very significant role in reducing the default rate from 21% to 12% while monthly funded volume grew from $400K to $1M+</li>
+          <li>Underwriting results supported growth from company capital only to 17 outside investors</li>
+          <li>Built a 14-section underwriting framework covering true revenue, cash-flow trend, liquidity, returned items, existing debt, payment capacity, red flags, and final decision</li>
+          <li>Size offers from real payment capacity and test each payment against the merchant's weakest month; structure step-up funding for higher-risk merchants, increasing exposure only after clean payment history</li>
+          <li>Catch stacking, debt cycling, altered or duplicated bank statements, and misrepresentation on applications</li>
+          <li>Manage relationships with 12 superbrokers (wholesale broker partners) who supply the deal flow</li>
+          <li>Built an AI-assisted underwriting workflow as decision support: two-model cross-check flags anomalies, plus a Node.js app that turns emailed PDF applications into standardized reports — every approve/decline decision verified against source documents and made by me</li>
+          <li>Track deals and reconcile commissions with partner funders in Google Sheets</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">MCA Broker / Shop Manager (promoted from Broker)</span><span class="dates">Apr 2025 – Dec 2025</span></div>
+        <div class="org">SH Capital (MCA brokerage) — South Florida</div>
+        <ul>
+          <li>Started in outreach; promoted to run the shop, leading a team of 5–10</li>
+          <li>Grew application flow from 10 per week to 12 per day; averaged 5 offers and 1 closed deal per day (~20 per month)</li>
+          <li>Packaged files, compared offers from multiple funders, and guided merchants through contracts and funding</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Finance Manager</span><span class="dates">May 2022 – Mar 2025</span></div>
+        <div class="org">26 Motors Miami — Miami Gardens, FL</div>
+        <ul>
+          <li>Underwrote and structured financing for every deal while sales grew from 45 to 80 units per month</li>
+          <li>Submitted credit applications to banks, cleared stipulations, and handled funding and vehicle registration</li>
+          <li>Closed customers by phone and secured the federal EV rebate for customers</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Credit Underwriter / Buyer</span><span class="dates">Apr 2021 – Nov 2021</span></div>
+        <div class="org">MidAtlantic Finance Company — Clearwater, FL</div>
+        <ul>
+          <li>Made approve/decline decisions on auto loans; verified income, residence, insurance, and bank statements</li>
+          <li>Enrolled and verified dealerships, reviewed stipulations, negotiated exceptions, and tracked dealer performance</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Finance and Fleet Manager</span><span class="dates">Apr 2017 – Jan 2020</span></div>
+        <div class="org">Island Toyota — Staten Island, NY</div>
+        <ul>
+          <li>Managed monthly budgets and P&amp;L, consistently hitting margin targets</li>
+          <li>Store averaged 220 units per month vs. a national average of 172</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Fleet Department Assistant Manager</span><span class="dates">Jan 2015 – Apr 2017</span></div>
+        <div class="org">Plaza Auto Mall — Brooklyn, NY</div>
+        <ul>
+          <li>Moved aged inventory through wholesale, B2B, export, and retail channels; negotiated and closed deals end-to-end</li>
+          <li>Handled post-sale funding, registration, and titling; ran advertising across radio, TV, and digital</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-head"><span class="title">Owner / General Manager</span><span class="dates">Jan 2005 – Jan 2015</span></div>
+        <div class="org">Jeafy Motors — Passaic, NJ</div>
+        <ul>
+          <li>Owned and ran the dealership: buying, pricing, sales, marketing, and profit tracking per unit</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education &amp; Certifications</h2>
+      <ul class="edu">
+        <li><strong>Google Data Analytics Professional Certificate</strong>, Coursera (2025)</li>
+        <li><strong>Bachelor of Arts in Business Management</strong>, Touro College, New York, NY (2015)</li>
+      </ul>
+    </section>
+  </main>
+  <footer>References available upon request</footer>
+</div>
+<div class="actions">
+  <button onclick="window.print()">🖨️ Print / Save as PDF</button>
+  <button class="secondary" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆ Back to top</button>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
